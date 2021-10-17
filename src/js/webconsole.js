@@ -8,23 +8,7 @@
         var no_login = typeof(__NO_LOGIN__) !== 'undefined' ? __NO_LOGIN__ : false;
         var silent_mode = false;
 
-        // Default banner
-        var banner_main = "Web Console";
-        var banner_link = 'http://web-console.org';
-        var banner_extra = banner_link + '\n';
-
-        // Big banner
-        if (!settings.is_small_window) {
-            banner_main = "" +
-                          "  _    _      _     _____                       _                " +
-                          "\n | |  | |    | |   /  __ \\                     | |            " +
-                          "\n | |  | | ___| |__ | /  \\/ ___  _ __  ___  ___ | | ___        " +
-                          "\n | |/\\| |/ _ \\ '_ \\| |    / _ \\| '_ \\/ __|/ _ \\| |/ _ \\ " +
-                          "\n \\  /\\  /  __/ |_) | \\__/\\ (_) | | | \\__ \\ (_) | |  __/  " +
-                          "\n  \\/  \\/ \\___|____/ \\____/\\___/|_| |_|___/\\___/|_|\\___| " +
-                          "";
-            banner_extra = '\n                 ' + banner_link + '\n';
-        }
+        
 
         // Output
         function show_output(output) {
